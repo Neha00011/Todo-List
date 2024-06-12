@@ -38,19 +38,6 @@ function Form() {
 					<div className='absolute bottom-0 right-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/10 to-transparent'></div>
 				</div>
 
-				{/* Decorative Icon */}
-				<div className='col-span-8 flex justify-center mb-4'>
-					<svg
-						className='w-12 h-12 text-[#B3C5EF]'
-						fill='currentColor'
-						viewBox='0 0 24 24'
-						xmlns='http://www.w3.org/2000/svg'
-					>
-						<path d='M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0zm0 21.917c-5.471 0-9.917-4.446-9.917-9.917C2.083 6.529 6.529 2.083 12 2.083c5.471 0 9.917 4.446 9.917 9.917 0 5.471-4.446 9.917-9.917 9.917z' />
-						<path d='M12.333 7.292h-1.666v5.333L16.083 15l.917-1.417-4.667-2.583z' />
-					</svg>
-				</div>
-
 				<Input
 					type='text'
 					placeholder='Enter your todo here...'
