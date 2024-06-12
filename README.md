@@ -1,15 +1,15 @@
 # Todo List Application
 
-A simple and responsive Todo List application built with React.
+A straightforward and responsive Todo List application developed using React.
 
 ## Features
 
-- Add, edit, and delete todos
-- Mark todos as completed or pending
-- Filter todos by status (all, completed, pending)
-- Sort todos by date (default, ascending, descending)
-- Clear all todos
-- Responsive design for mobile and desktop
+- Add, edit, and delete tasks
+- Toggle tasks between completed and pending states
+- Filter tasks by status (all, completed, pending)
+- Sort tasks by date (default, ascending, descending)
+- Clear all tasks
+- Responsive design suitable for both mobile and desktop
 
 ## Technologies Used
 
@@ -42,59 +42,51 @@ A simple and responsive Todo List application built with React.
 └── README.md
 ```
 
-- `components/`: Contains all the React components.
-- `context/`: Contains context API files for state management.
-- `utils/`: Contains utility functions such as filtering todos.
-- `public/`: Contains the public assets.
+- `components/`: All the React components.
+- `context/`: Context API files for state management.
+- `utils/`: Utility functions like filtering tasks.
+- `public/`: Public assets.
 - `src/`: Main source directory for the React application.
 
 ## Testing Guidance
 
-To ensure the Todo List Application works as expected, follow these testing guidelines:
+To verify that the Todo List Application functions correctly, follow these testing steps:
 
 ### Prerequisites
 
 - Clone the repository to your local machine.
-- Ensure all dependencies are installed by running `bun install`.
-- Make sure the application is running locally by executing `bun run dev`.
+- Install all dependencies with `bun install`.
+- Ensure the application runs locally by executing `bun run dev`.
 
 ### Testing Steps
 
-- **Add a Todo**
-  - Enter a todo in the input field and click the "Add Todo" button.
-  - Verify the todo appears in the list with the correct text.
+- **Add a Task**
+  - Type a task into the input field and click "Add Todo".
+  - Check that the task appears in the list with the correct text.
 
-- **Edit a Todo**
-  - Click on the text of an existing todo.
-  - Edit the text and press Enter.
-  - Ensure the todo text updates correctly in the list.
+- **Edit a Task**
+  - Click on the text of a task.
+  - Modify the text and press Enter.
+  - Verify that the task text updates correctly.
 
-- **Delete a Todo**
-  - Click the delete icon/button on a todo item.
-  - Confirm that the todo is removed from the list.
+- **Delete a Task**
+  - Click the delete icon/button on a task.
+  - Confirm the task is removed from the list.
 
-- **Mark a Todo as Completed/Pending**
-  - Click the checkbox on a todo item to toggle its status.
-  - Check that the todo's status updates and is reflected correctly.
+- **Toggle Task Status**
+  - Click the checkbox on a task to change its status.
+  - Ensure the task's status updates and is displayed correctly.
 
-- **Filter Todos**
+- **Filter Tasks**
   - Use the filter dropdown to switch between "All", "Completed", and "Pending" views.
-  - Verify that the list displays the correct todos based on the selected filter.
+  - Verify that the list shows the correct tasks based on the selected filter.
 
-- **Sort Todos**
-  - Use the sort dropdown to sort todos by "Default", "Ascending", and "Descending".
-  - Ensure that todos are sorted by their date in the selected order.
+- **Sort Tasks**
+  - Use the sort dropdown to sort tasks by "Default", "Ascending", and "Descending".
+  - Ensure tasks are sorted by date in the chosen order.
 
-- **Clear All Todos**
+- **Clear All Tasks**
   - Click the "Clear All" button.
-  - Confirm that all todos are removed from the list.
+  - Confirm that all tasks are removed from the list.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Inspired by various todo list applications available online. Specially [Todoist](https://todotify.vercel.app/)
-by <https://github.com/abdellatif-laghjaj> for the UI idea.
-- Thanks to [Tailwind CSS](https://tailwindcss.com/) for making styling a breeze.
+By following these steps, you can ensure that the Todo List Application is working as intended and provides a smooth user experience.
