@@ -21,7 +21,7 @@ A simple and responsive Todo List application built with React.
 
 ```
 ├── public
-│   └── Todoslogo.png
+│   └── logo.png
 ├── src
 │   ├── components
 │   │   ├── Form.jsx
@@ -35,8 +35,8 @@ A simple and responsive Todo List application built with React.
 │   ├── App.js
 │   ├── index.css
 |   ├── main.js
-│   ├── index.html
-│   └── ...
+│   └──  index.html
+│   
 ├── tailwind.config.js
 ├── package.json
 └── README.md

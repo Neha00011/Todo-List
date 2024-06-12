@@ -39,12 +39,13 @@ function Show() {
 	}, [todos, filter, sorted]);
 
 	return (
-		<div className='flex flex-col w-full p-4'>
-			<div className='flex flex-col md:flex-row md:items-center md:justify-between gap-4'>
-				<div className='flex flex-row gap-4 text-white p-2 rounded-lg items-center justify-center flex-grow'>
+		<div className='flex flex-col w-full p-2 bg-[#333A49] rounded-xl shadow-lg'>
+			<div className='flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4'>
+				{/* Filter Section */}
+				<div className='flex flex-row gap-4 text-white p-2 rounded-lg items-center justify-center flex-grow bg-[#1D283A]'>
 					<label className='text-[#B3C5EF]'>Filter</label>
 					<select
-						className='bg-[#1D283A] text-white p-2 rounded-lg flex items-center justify-center hover:bg-[#202e42]'
+						className='bg-[#1D283A] text-white p-2 rounded-lg flex items-center justify-center hover:bg-[#202e42] focus:outline-none focus:ring-2 focus:ring-blue-500'
 						onChange={(e) => setFilter(e.target.value)}
 					>
 						<option value='all'>All</option>
@@ -52,10 +53,12 @@ function Show() {
 						<option value='pending'>Pending</option>
 					</select>
 				</div>
-				<div className='flex flex-row gap-4 text-white p-2 rounded-lg items-center justify-center flex-grow'>
+
+				{/* Sort Section */}
+				<div className='flex flex-row gap-4 text-white p-2 rounded-lg items-center justify-center flex-grow bg-[#1D283A]'>
 					<label className='text-[#B3C5EF]'>Sort</label>
 					<select
-						className='bg-[#1D283A] text-white p-2 rounded-lg flex items-center justify-center hover:bg-[#202e42]'
+						className='bg-[#1D283A] text-white p-2 rounded-lg flex items-center justify-center hover:bg-[#202e42] focus:outline-none focus:ring-2 focus:ring-blue-500'
 						onChange={(e) => setSorted(e.target.value)}
 					>
 						<option value='default'>Default</option>
@@ -63,21 +66,25 @@ function Show() {
 						<option value='descending'>Descending</option>
 					</select>
 				</div>
+
+				{/* Clear All Button */}
 				<button
-					className='bg-[#828DF8] text-white p-2 rounded-lg flex flex-grow items-center justify-center hover:bg-blue-800'
+					className='bg-[#5262f3] text-white p-2 rounded-lg flex items-center justify-center hover:bg-blue-800 transition duration-300 ease-in-out transform hover:scale-105'
 					onClick={() => deleteAllTodo()}
 				>
 					Clear All
 				</button>
 			</div>
 
-			<div className='flex flex-col gap-1 mt-4'>
+			{/* Todo List */}
+			<div className='flex flex-col gap-2 mt-4'>
 				{performedTodos.map((todo, index) => (
 					<TodoCard
 						key={index}
 						todo={todo}
 						onStatusChange={() => toggleComplete(todo.id)}
 						onDelete={() => deleteTodo(todo.id)}
+						className='bg-[#1D283A] text-white p-4 rounded-lg shadow-md hover:bg-[#202e42] transition duration-300'
 					/>
 				))}
 			</div>

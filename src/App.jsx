@@ -72,17 +72,15 @@ function App() {
 				deleteAllTodo,
 			}}
 		>
-			<div className='min-h-screen flex flex-col justify-center items-center'>
-				<div className='flex flex-col gap-4 bg-[#333A49] md:w-1/2 border-zinc-300 border-2 justify-center items-center rounded-xl p-4 shadow-lg shadow-[#ffffff2b]'>
-					<h1 className='text-4xl font-serif text-[#B3C5EF]'>
-						Here Your Todo's List
-					</h1>
-					{/* // Input Field // */}
+			<div className='min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-800 via-gray-900 to-black'>
+				<div className='flex flex-col gap-4 bg-[#333A49] md:w-1/2 border-zinc-300 border-2 justify-center items-center rounded-xl p-8 shadow-lg shadow-[#ffffff2b]'>
+					<h1 className='text-4xl font-serif text-[#B3C5EF] mb-4'>Todo App</h1>
+					{/* Input Field */}
 					<div className='w-full'>
 						<Form />
 					</div>
-					{/* // Show Field // */}
-					<div className='w-full'>
+					{/* Show Field */}
+					<div className='w-full mt-4'>
 						<Show />
 					</div>
 				</div>
