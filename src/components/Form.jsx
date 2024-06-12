@@ -27,9 +27,9 @@ function Form() {
 	};
 
 	return (
-		<div className='flex justify-center items-center w-full p-6 bg-gradient-to-r from-gray-800 via-gray-900 to-black'>
+		<div className='flex justify-center items-center w-full p-4 sm:p-6 bg-gradient-to-r from-gray-800 via-gray-900 to-black'>
 			<form
-				className='relative grid grid-cols-8 gap-4 w-full items-center bg-[#333A49] px-6 py-8 rounded-xl shadow-lg'
+				className='relative grid grid-cols-1 sm:grid-cols-8 gap-4 w-full items-center bg-[#333A49] px-4 sm:px-6 py-6 sm:py-8 rounded-xl shadow-lg'
 				onSubmit={handleSubmit}
 			>
 				{/* Decorative Background Elements */}
@@ -43,12 +43,12 @@ function Form() {
 					placeholder='Enter your todo here...'
 					value={newTodo}
 					onChange={(e) => setNewTodo(e.target.value)}
-					className='col-span-4 p-3 bg-[#444C5C] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 z-10'
+					className='col-span-1 sm:col-span-4 p-3 bg-[#444C5C] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 z-10'
 				/>
 				<Input
 					type='date'
 					placeholder='dd-mm-yyyy'
-					className='col-span-3 p-3 bg-[#444C5C] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 z-10'
+					className='col-span-1 sm:col-span-3 p-3 bg-[#444C5C] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 z-10'
 					value={date}
 					onChange={(e) => setDate(e.target.value)}
 				/>
